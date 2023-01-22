@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@font-face {
+    font-family: GothamHTF-Book;
+    src: url(/fonts/GothamHTF-Book.otf);
+}
+@font-face {
+    font-family: GothamHTF-Bold;
+    src: url(/fonts/GothamHTF-Bold.otf);
+}
+@font-face {
+    font-family: GothamHTF-Medium;
+    src: url(/fonts/GothamHTF-Medium.otf);
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+}
+
+#container{
+    display: block;
+    height: 3211px;
+}
+
+#container-menu{
+    background-color: #151819;
+}
+
+#menu{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+#menu ul li{
+    list-style: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: GothamHTF-Medium;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+
+a{
+    color: #91A3AD;
+    text-decoration: none;
+}
+
+#menu img{
+    position: absolute;
+    left: 15%;
+}
+
+#button-menu{
+    border: none;
+    background-color: #ED145B;
+    font-family: GothamHTF-Book;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    color: #ffffff;
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    right: 20%;
+    cursor: pointer;
+}
+
+#container-header{
+    background-image: url(./img/header.png);
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+}
+
+#titulo-header{
+    font-family: GothamHTF-Medium;
+    color: #91A3AD;
+    font-size: 60px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 541px;
+    top: 421px;
+}
+
+#subtitulo-header{
+    font-family: GothamHTF-Book;
+    color: #91A3AD;
+    font-weight: 500;
+    font-size: 40px;
+    position: absolute;
+    left: 365px;
+    top: 501px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#button-header{
+    border-color: #ED145B;
+    color: #ED145B;
+    background-color: transparent;
+    font-family: GothamHTF-Book;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    top: 612px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#button-header:hover{
+    color: #ffffff;
+    background-color: #ED145B;
+}
+
+#scroll-header{
+    font-family: GothamHTF-Book;
+    font-size: 10px;
+    position: absolute;
+    top: 834px;
+    color: #91A3AD;
+}
+
+#seta-header{
+    position: absolute;
+    top: 894px;
+}
+
+#curso h1{
+    color: #91A3AD;
+    font-family: GothamHTF-Book;
+    font-size: 50px; 
+    position: absolute;
+    left: 360px;
+    top: 1072px;
+}
+
+#paragrafo-principal-curso{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #91A3AD;
+    position: absolute;
+    width: 502px;
+    height: 408px;
+    left: 360px;
+    top: 1174px;
+}
+
+#divisoria-curso{
+    position: absolute;
+    left: 960px;
+    top: 1156px;
+}
+
+#curso h3{
+    font-family: GothamHTF-Book;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ED145B;
+    position: absolute;
+    width: 268px;
+    height: 20px;
+    left: 1033px;
+    top: 1121px;
+}
+
+#paragrafos{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    color: #616D72;
+    position: absolute;
+    width: 458px;
+    height: 408px;
+    left: 1072px;
+    top: 1173px;
+    line-height: 30px;
+}
+
+#paragrafos p{
+    padding-bottom: 40px;
+}
+
+#paragrafo1-curso{
+    position: absolute;
+    top: 15px;
+    left: -35px
+}
+
+#paragrafo2-curso{
+    position: absolute;
+    top: 143px;
+    left: -35px
+}
+
+#matriz h1{
+    color: #91A3AD;
+    font-family: GothamHTF-Book;
+    font-size: 45px; 
+    position: absolute;
+    width: 523px;
+    height: 54px;
+    left: 480px;
+    top: 1716px;
+}
+
+#matriz h2{
+    color: #616D72;
+    font-family: GothamHTF-Book;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    position: absolute;
+    width: 523px;
+    height: 35px;
+    left: 568px;
+    top: 1777px;
+}
+
+#imagem-matriz{
+    position: absolute;
+    width: 73.01px;
+    left: 480px;
+    top: 1795.47px;
+}
+
+.accordion, .accordion2{
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    padding-top: 27px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion2{
+    padding-bottom: 20px;
+}
+
+.accordion p, .accordion2 p{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #91A3AD;
+    padding-left: 40px;
+}
+
+.active, .accordion:hover{
+    background-color: transparent;
+}
+
+.accordion:after, .accordion2:after{
+    content: url(./img/abrir\ fiap.png);
+    float: right;
+    margin-right: 40px;
+    margin-top: -40px;
+}
+
+.active:after{
+    content: url(./img/fechar\ fiap.png);
+}
+
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 18px;
+    padding-top: 29px;
+    background-color: transparent;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#container-accordion{
+    width: 962px;
+    border-style: solid;
+    border-color: #91A3AD;
+    border-width: 1px;
+    margin-top: 20px;
+    position: absolute;
+    left: 480px;
+    top: 2007px;
+}
+
+#container-accordion2{
+    width: 962px;
+    border-style: solid;
+    border-color: #91A3AD;
+    border-width: 1px;
+    position: absolute;
+    left: 480px;
+    top: 1897px;
+}
+
+#titulo-accordion{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #ED145B;
+}
+
+#texto-accordion{
+    display: flex;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #616D72;
+    width: 763px;
+    height: 260px;
+}
+
+#imagem-accordion{
+    padding-left: 40px;
+    padding-right: 21px;
+    padding-top: 5px;
+    height: 137px;
+}
+
+#turmas h1{
+    font-family: 'GothamHTF-Book';
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 50px;
+    color: #91A3AD;
+    position: absolute;
+    width: 350px;
+    height: 54px;
+    left: 785px;
+    top: 2540px;
+}
+
+#imagem-turmas{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    left: 941px;
+    top: 2619px;
+}
+
+table, td, th {
+    border: 1px solid;
+    border-color: #32383B;
+    color: #91A3AD;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    position: absolute;
+    width: 960px;
+    height: 216px;
+    left: 480px;
+    top: 2689px;
+    color: #91A3AD;
+}
+
+table td{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+table th{
+    font-family: 'GothamHTF-Medium';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #91A3AD;
+    padding-top: 28px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 28px;
+}
+
+#campus-turmas{
+    color: #ED145B;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    padding-top: 28px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 28px;
+}
+
+#dias-turmas{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    width: 213px;
+    height: 72px;
+    padding-left: 11px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+#preco-turmas{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+#horario-turmas{
+    width: 107px;
+    height: 72px;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#turmas p{
+    color: #616D72;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    width: 239px;
+    height: 16px;
+    left: 1199px;
+    top: 2930px;
+}
+
+#button-turmas{
+    border-color: #ED145B;
+    color: #ED145B;
+    background-color: transparent;
+    font-family: GothamHTF-Book;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    left: 871px;
+    top: 3010px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#button-turmas:hover{
+    color: #ffffff;
+    background-color: #ED145B;
+}
